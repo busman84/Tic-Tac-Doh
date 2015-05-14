@@ -1,0 +1,144 @@
+/*Main CSS*/
+/*Header Section will have a light blue background with a yellow Tic Tac DOH!!!*/
+/*possible animation (flying clouds or birds) in the background of the title*/
+
+#header {
+    background-image: url("../img/header.png");
+    height: 11em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -.5em
+}
+/* Rules CSS*/
+
+#benderPic {
+    background-image: url("../img/bender.png");
+    height: 12em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#homerPic {
+    background-image: url("../img/homer.png");
+    height: 12em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.center {
+    text-align: center;
+}
+
+.rules {
+    list-style-type: square;
+}
+
+.rulesTitle {
+    font-size: 2em;
+    font-family: sans-serif;
+}
+/*To be determined on background of gameboard body (possibly just white)*/
+
+.gameboard {
+    width: 6em;
+    height: 6em;
+    border: .25em solid #44a4db;
+    margin: -.255em;
+    cursor: pointer;
+}
+
+.sideBar {
+    position: relative;
+    bottom: 1.8em;
+}
+
+.lowSideBar {
+    padding-bottom: 12em;
+    padding-top: 0;
+    margin-top: -2em;
+    position: relative;
+    top: .005em;
+}
+
+.yellow {
+    background-color: #f4ee54;
+}
+
+.blue {
+    background-color: #44a4db;
+}
+.textBlue {
+    color: #44a4db;
+}
+
+.topLeft {
+    border-top: none;
+    border-left: none;
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+
+.topRight {
+    border-top: none;
+    border-right: none;
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+
+.bottomLeft {
+    border-bottom: none;
+    border-left: none;
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+
+.bottomRight {
+    border-bottom: none;
+    border-right: none;
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+
+.midRight {
+    border-right: none;
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+
+.midLeft {
+    border-left: none;
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+
+.midTop {
+    border-top: none;
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+
+.midBottom {
+    border-bottom: none;
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+
+.mid {
+    position: relative;
+    left: 12em;
+    top:1.5em;
+}
+/*Sidebar CSS where stats will be displayed*/
+/*Footer CSS*/
