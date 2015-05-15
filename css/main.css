@@ -13,26 +13,25 @@
     height: 11em;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: -.5em
+    margin: -.5em;
+    margin-right: 0;
 }
 /* Rules CSS*/
 
 #benderPic {
     background-image: url("../img/bender.png");
-    height: 12.7em;
+    
     background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 6em;
 }
 
 #homerPic {
     background-image: url("../img/homer.png");
-    height: 12.7em;
+   
     background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 6em;
 }
 
 .center {
@@ -134,6 +133,18 @@ border-right: none;
   margin: auto;
   position: relative;
   top: 1em;
+  -webkit-animation-name :spin;
+  -webkit-animation-duration: .5s;
+  animation-name: spin;
+  animation-duration: .5s;
+
+}
+
+@-webkit-keyframes spin{
+	0% {transform: rotateY(720deg)}
+	25%{transform: rotateY(1440deg)}
+	75%{transform: rotateY(2160deg)}
+	100%{transform: rotateY(2880deg)}
 }
 
 #startOver{
@@ -176,6 +187,10 @@ border-right: none;
 	text-shadow: .15em .15em .15em black;
 	position: relative;
 	top: 1em;
+}
+.cats{
+	font-family: im;
+	font-size: 3em;
 }
 /*Sidebar CSS where stats will be displayed*/
 /*Footer CSS*/

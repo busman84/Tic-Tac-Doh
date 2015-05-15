@@ -29,7 +29,7 @@ $(document).ready(function() {
             $(this).html('<img src="img/bender2.png" class="pics">');
             $(this).addClass("disable o");
             if ($('#squareTL').hasClass('o') && $('#squareTM').hasClass('o') && $('#squareTR').hasClass('o') || $('#squareML').hasClass('o') && $('#squareM').hasClass('o') && $('#squareMR').hasClass('o') || $('#squareBL').hasClass('o') && $('#squareBM').hasClass('o') && $('#squareBR').hasClass('o') || $('#squareTL').hasClass('o') && $('#squareML').hasClass('o') && $('#squareBL').hasClass('o') || $('#squareTM').hasClass('o') && $('#squareM').hasClass('o') && $('#squareBM').hasClass('o') || $('#squareTR').hasClass('o') && $('#squareMR').hasClass('o') && $('#squareBR').hasClass('o') || $('#squareTL').hasClass('o') && $('#squareM').hasClass('o') && $('#squareBR').hasClass('o') || $('#squareTR').hasClass('o') && $('#squareM').hasClass('o') && $('#squareBL').hasClass('o')) {
-                alert(" Bite my shine metal ass!!!");
+                alert(" Bite my shiny metal ass!!!");
                 benderWin++;
                 $('#benderWin').text(benderWin);
                 $('.gameboard').text('');
@@ -56,7 +56,9 @@ $(document).ready(function() {
         }
         turn++;
         if (turn >= 9) {
-            alert('Cats Game!!!!')
+            //alert('Cats Game!!!!')
+            $('.gameboard').html('<img src="img/Cats.png" class="pics")>');
+            $('#squareM').html("<span class='cats'> CATS GAME</span>")
         }
 
     });
