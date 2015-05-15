@@ -23,18 +23,18 @@
     <div class="pure-g">
         <!-- Bender Image -->
         <div class="pure-u-5-24 blue" id="benderPic">
-        </div>
+		</div>
         <!-- Rules -->
         <div class="pure-u-14-24 yellow">
             <p class="center rulesTitle textBlue">RULES OF THE GAME</p>
             <ul class="rules textBlue">
-                <li>Whoever is the youngest starts the first game, after that alternate who goes first</li>
+                <li>Whoever is the youngest player will go first and play as Bender</li>
                 <br>
-                <li>Place your Homer or Bender Icon in one of the 9 squares on the game board</li>
+                <li>Click on an empty square where you would like to place your peice</li>
                 <br>
                 <li>The first player to connect three in a row vertically, horizontally, or diagonally is the winner</li>
                 <br>
-                <li>In case of a game where no player connects three in a row the result is a draw</li>
+                <li>In case of a game where no player connects three in a row the result is a cats game</li>
             </ul>
         </div>
         <!-- Homer Image -->
@@ -43,39 +43,38 @@
     </div>
     <!-- Create the Game Board  and Game Peices-->
     <div class="pure-g">
-        <div class="pure-u-5-24 blue sideBar">
+        <div class="pure-u-5-24 blue">
+        	<div class="names">Bender's Wins</div>
+        	<div id="benderWin" class="winBox"></div>
         </div>
-        <div class="pure-u-14-24 yellow">
-            <canvas id="squareTL" class="gameboard topLeft textBlue"></canvas>
-            <canvas id="squareML" class="gameboard midTop textBlue"></canvas>
-            <canvas id="squareBL" class="gameboard topRight textBlue"></canvas>
+        <div class="pure-u-14-24 yellow padding bottom">
+           <span id="startOver" class="blue">Start Over</span>
+            <div class="pure-g padding">
+                
+                    <div class="pure-g moveRight">
+                        <div id="squareTL" class="gameboard topLeft textBlue"></div>
+                        <div id="squareTM" class="gameboard midTop textBlue"></div>
+                        <div id="squareTR" class="gameboard topRight textBlue"></div>
+                    </div>
+                    <div class="pure-g moveRight">
+                        <div id="squareML" class="gameboard midLeft textBlue"></div>
+                        <div id="squareM" class="gameboard mid textBlue"></div>
+                        <div id="squareMR" class="gameboard midRight textBlue"></div>
+                    </div>
+                    <div class="pure-g moveRight">
+                        <div id="squareBL" class="gameboard bottomLeft textBlue"></div>
+                        <div id="squareBM" class="gameboard midBottom textBlue"></div>
+                        <div id="squareBR" class="gameboard bottomRight textBlue"></div>
+                    </div>
+                
+            </div>
         </div>
-        <div class="pure-u-5-24 blue sideBar">
+        <div class="pure-u-5-24 blue">
+        	<div class='names'>Homer's Wins</div>
+        	<div id="homerWin" class="winBox"></div>
         </div>
     </div>
-    <div class="pure-g">
-        <div class="pure-u-5-24 blue sideBar">
-        </div>
-        <div class="pure-u-14-24 yellow">
-            <canvas id="squareMT" class="gameboard midLeft textBlue"></canvas>
-            <canvas id="squareM" class="gameboard mid textBlue"></canvas>
-            <canvas id="squareMB" class="gameboard midRight textBlue"></canvas>
-        </div>
-        <div class="pure-u-5-24 blue sideBar">
-        </div>
-    </div>
-    <div class="pure-g">
-        <div class="pure-u-5-24 blue sideBar lowSideBar">
-        </div>
-        <div class="pure-u-14-24 yellow">
-            <canvas id="squareTR" class="gameboard bottomLeft textBlue"></canvas>
-            <canvas id="squareMR" class="gameboard midBottom textBlue"></canvas>
-            <canvas id="squareBR" class="gameboard bottomRight textBlue"></canvas>
-        </div>
-        <div class="pure-u-5-24 blue sideBar lowSideBar">
-        </div>
-    </div>
-    <!-- Look into doing a canvas -->
+    <!-- Look into doing a div -->
     <!-- Side bar that has the stats of the games played wins and losses record -->
     <!-- Footer that will have copyright, links to Dubious Games Inc., etc -->
 </body>

@@ -1,6 +1,12 @@
 /*Main CSS*/
 /*Header Section will have a light blue background with a yellow Tic Tac DOH!!!*/
 /*possible animation (flying clouds or birds) in the background of the title*/
+.float{
+	float:left;
+}
+.clear{
+	clear: both;
+}
 
 #header {
     background-image: url("../img/header.png");
@@ -13,7 +19,7 @@
 
 #benderPic {
     background-image: url("../img/bender.png");
-    height: 12em;
+    height: 12.7em;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1em;
@@ -22,7 +28,7 @@
 
 #homerPic {
     background-image: url("../img/homer.png");
-    height: 12em;
+    height: 12.7em;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1em;
@@ -44,25 +50,28 @@
 /*To be determined on background of gameboard body (possibly just white)*/
 
 .gameboard {
-    width: 6em;
-    height: 6em;
-    border: .25em solid #44a4db;
-    margin: -.255em;
+    width: 8em;
+    height: 8em;
+    
     cursor: pointer;
+    border: .25em solid #44a4db;
+    
+}
+.moveRight{
+	position: relative;
+	left: 8.5em;
+
 }
 
-.sideBar {
-    position: relative;
-    bottom: 1.8em;
+
+.padding {
+    padding-top:2em;
+}
+.bottom{
+	padding-bottom: 2em;
 }
 
-.lowSideBar {
-    padding-bottom: 12em;
-    padding-top: 0;
-    margin-top: -2em;
-    position: relative;
-    top: .005em;
-}
+
 
 .yellow {
     background-color: #f4ee54;
@@ -76,69 +85,97 @@
 }
 
 .topLeft {
-    border-top: none;
-    border-left: none;
-    position: relative;
-    left: 12em;
-    top:1.5em;
+border-top: none;
+border-left: none;
+    
+    
 }
 
 .topRight {
     border-top: none;
-    border-right: none;
-    position: relative;
-    left: 12em;
-    top:1.5em;
+border-right: none;
+    
 }
 
 .bottomLeft {
     border-bottom: none;
-    border-left: none;
-    position: relative;
-    left: 12em;
-    top:1.5em;
+border-left: none;
+    
 }
 
 .bottomRight {
     border-bottom: none;
-    border-right: none;
-    position: relative;
-    left: 12em;
-    top:1.5em;
+border-right: none;
+    
 }
 
 .midRight {
-    border-right: none;
-    position: relative;
-    left: 12em;
-    top:1.5em;
+    border-right:none;
+
+    
 }
 
 .midLeft {
     border-left: none;
-    position: relative;
-    left: 12em;
-    top:1.5em;
+    
 }
 
 .midTop {
-    border-top: none;
-    position: relative;
-    left: 12em;
-    top:1.5em;
+    border-top:none;
+    
 }
 
 .midBottom {
-    border-bottom: none;
-    position: relative;
-    left: 12em;
-    top:1.5em;
+   border-bottom: none;
+    
+}
+.pics{
+	  display: block;
+  margin: auto;
+  position: relative;
+  top: 1em;
 }
 
-.mid {
-    position: relative;
-    left: 12em;
-    top:1.5em;
+#startOver{
+	position: relative;
+	left: 8em;
+	border: .3em solid #44a4db;
+	color: #f4ee54;
+	border-radius: .5em;
+	box-shadow: .35em .35em .35em black;
+	cursor: pointer;
+	text-shadow: .15em .15em .15em black;
+	font-family: impact;
+	font-size: 2em;
+}
+
+#startOver:active{
+	box-shadow: .15em .15em .15em black;
+	margin: .1em;
+}
+
+.winBox{
+	height: 1.2em;
+	width: 4em;
+	background-color: #44a4db;
+	text-align: center;
+	border: .25em solid #f4ee54;
+	position: relative;
+	left: 2.8em;
+	top: 2em;
+	color: #f4ee54;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	box-shadow: .25em .25em .25em black;
+}
+.names{
+	font-family: impact;
+	font-size: 2em;
+	color: #f4ee54;
+	text-align: center;
+	text-shadow: .15em .15em .15em black;
+	position: relative;
+	top: 1em;
 }
 /*Sidebar CSS where stats will be displayed*/
 /*Footer CSS*/
