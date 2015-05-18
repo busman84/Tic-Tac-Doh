@@ -146,6 +146,43 @@ border-right: none;
 	75%{transform: rotateY(2160deg)}
 	100%{transform: rotateY(2880deg)}
 }
+.twirl{
+-webkit-animation-name :twirl;
+  -webkit-animation-duration: 2.5s;
+  animation-name: twirl;
+  animation-duration: 2.5s;
+  position: relative;
+  
+
+}
+
+.homDance{
+	position: relative;
+  top: 2em;
+}
+
+.bendDance{
+	position: relative;
+  top: 3.5em;
+}
+
+@-webkit-keyframes twirl{
+	0% {transform: rotateZ(0deg)}
+	10%{transform: rotateZ(15deg)}
+	20%{transform: rotateZ(-15deg)}
+	
+	30%{transform: rotateZ(15deg)}
+	40%{transform: rotateZ(-15deg)}
+	
+	50% {transform: rotateZ(15deg)}
+	60%{transform: rotateZ(-15deg)}
+	
+	70%{transform: rotateZ(15deg)}
+	80%{transform: rotateZ(-15deg)}
+	90%{transform: rotateZ(15deg)}
+	
+	100%{transform: rotateZ(0deg)}
+}
 
 #startOver{
 	position: relative;
